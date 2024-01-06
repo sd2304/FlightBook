@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="css/style1.css">
+
+  <title>Flight Booking</title>
+</head>
+
+<body>
+
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="images/undraw_remotely_2j6y.svg" alt="Image" class="img-fluid">
+        </div>
+        <div class="col-md-6 contents">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="mb-4">
+                <h3>Find your Best Pick now!</h3>
+                <p class="mb-4">Get the best three flights suiting your options</p>
+              </div>
+              <form id="flightForm">
+                <div class="form-group first">
+                  <label for="source">Going From</label>
+                  <input type="text" class="form-control" id="source">
+
+                </div>
+                <div class="form-group last mb-4">
+                  <label for="arrival">Arriving To</label>
+                  <input type="text" class="form-control" id="arrival">
+                </div>
+                <button type="submit" class="btn btn-block btn-primary" id="show">Show Me</button>
+                <a href="index.html" class="btn btn-block btn-primary">Back to Home</a>
+              </form>
+            </div>
+          </div>
+        </div>
+        <h4 class="text-center mb-4 mt-4" id="TypeError"></h4>
+        <section class="ftco-section" id="choices">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h4 class="text-center mb-4 mt-4">Best Business Class Prices For You</h4>
+                <div class="table-wrap">
+                  <table class="table">
+                    <thead class="thead-primary">
+                      <tr>
+                        <th>Flight ID</th>
+                        <th>Business Class Price (Rs)</th>
+                        <th>Duration (minutes)</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td id="t1bid"></td>
+                        <td id="t1bp"></td>
+                        <td id="t1bd"></td>
+                        <td><button class="btn btn-primary">Book Now!</a></td>
+                      </tr>
+                      <tr>
+                        <td id="t2bid"></td>
+                        <td id="t2bp"></td>
+                        <td id="t2bd"></td>
+                        <td><button class="btn btn-primary">Book Now!</a></td>
+                      </tr>
+                      <tr>
+                        <td id="t3bid"></td>
+                        <td id="t3bp"></td>
+                        <td id="t3bd"></td>
+                        <td><button class="btn btn-primary">Book Now!</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <h4 class="text-center mb-4 mt-4">Best Economy Class Prices For You</h4>
+                <div class="table-wrap">
+                  <table class="table">
+                    <thead class="thead-primary">
+                      <tr>
+                        <th>Flight ID</th>
+                        <th>Economy Class Price (Rs)</th>
+                        <th>Duration (minutes)</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td id="t1eid"></td>
+                        <td id="t1ep"></td>
+                        <td id="t1ed"></td>
+                        <td><button class="btn btn-primary">Book Now!</a></td>
+                      </tr>
+                      <tr>
+                        <td id="t2eid"></td>
+                        <td id="t2ep"></td>
+                        <td id="t2ed"></td>
+                        <td><button class="btn btn-primary">Book Now!</a></td>
+                      </tr>
+                      <tr>
+                        <td id="t3eid"></td>
+                        <td id="t3ep"></td>
+                        <td id="t3ed"></td>
+                        <td><button class="btn btn-primary">Book Now!</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <h4 class="text-center mb-4 mt-4">Reach there in Shortest Time!</h4>
+                <div class="table-wrap">
+                  <table class="table">
+                    <thead class="thead-primary">
+                      <tr>
+                        <th>Flight ID</th>
+                        <th>Economy Class Price (Rs)</th>
+                        <th>Duration (minutes)</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td id="t1did"></td>
+                        <td id="t1dp"></td>
+                        <td id="t1dd"></td>
+                        <td><button class="btn btn-primary">Book Now!</a></td>
+                      </tr>
+                      <tr>
+                        <td id="t2did"></td>
+                        <td id="t2dp"></td>
+                        <td id="t2dd"></td>
+                        <td><button class="btn btn-primary">Book Now!</a></td>
+                      </tr>
+                      <tr>
+                        <td id="t3did"></td>
+                        <td id="t3dp"></td>
+                        <td id="t3dd"></td>
+                        <td><button class="btn btn-primary">Book Now!</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- TASK 5 -->
+        <!-- <section id="kids"> -->
+          <!-- <div class="col-md-6 contents" id="kids">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="mb-4">
+
+                  <h3>Explore All possible cities with your Kids</h3>
+                  <form id="flightForm">
+                    <div class="form-group first">
+                      <label for="fromC">Going From (City)</label>
+                      <input type="text" class="form-control" id="fromC">
+                    </div>
+                    <div class="form-group last mb-4">
+                      <label for="kreview">Minimum Expected Kids' Review</label>
+                      <input type="text" class="form-control" id="kreview">
+                    </div>
+                    <button type="submit" class="btn btn-block btn-primary" id="showResults">Show Results</button>
+                  </form>
+
+                </div>
+              </div>
+            </div>
+          </div> -->
+        <!-- </section> -->
+        <!-- <div class="form-group last mb-4" id="reachable-cities">
+          <h3>Cities Reachable from Source City:</h2>
+            <ul id="cities-list"></ul>
+        </div>
+        <h4 class="text-center mb-4 mt-4" id="SecError"></h4> -->
+  <!-- TASK 4 -->
+  <!-- <div class="col-md-6 contents">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="mb-4">
+          <h3>Still Not Satisfied?</h3>
+          <p class="mb-4">Add filters like breaks, destnation, budget to know all the places you can explore</p>
+        </div>
+        <form id="flightForm">
+          <div class="form-group first">
+            <label for="source">Going From</label>
+            <input type="text" class="form-control" id="fromCity">
+          </div>
+          <div class="form-group middle mb-4">
+            <label for="dur">Duration (Minutes) </label>
+            <input type="text" class="form-control" id="dur">
+          </div>
+          <div class="form-group first">
+            <label for="budget">Budget (Rs) </label>
+            <input type="text" class="form-control" id="budget">
+          </div>
+          <div class="form-group last mb-4">
+            <label for="breaks">Maximum Breaks </label>
+            <input type="text" class="form-control" id="breaks">
+          </div>
+          <button type="submit" class="btn btn-block btn-primary" id="showFlights">Show My Flights</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="form-group last mb-4" id="reachable-city">
+    <h3>Cities Reachable from Your Current City:</h2>
+      <ul id="city-list"></ul>
+  </div>
+  <h4 class="text-center mb-4 mt-4" id="ThirdError"></h4> -->
+</div>
+</div>
+</div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js\index1.js"></script>
+</body>
+
+</html>

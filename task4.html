@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/styles4.css">
+    <title>task4</title>
+</head>
+
+<body>
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 contents">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="mb-4">
+                                <h3>Still Not Satisfied?</h3>
+                                <p class="mb-4">Add filters like breaks, destnation, budget to know all the places you
+                                    can explore</p>
+                            </div>
+                            <form id="flightForm">
+                                <div class="form-group first">
+                                    <label for="source">Going From</label>
+                                    <input type="text" class="form-control" id="fromCity">
+                                </div>
+                                <div class="form-group middle mb-4">
+                                    <label for="dur">Duration (Minutes) </label>
+                                    <input type="text" class="form-control" id="dur">
+                                </div>
+                                <div class="form-group first">
+                                    <label for="budget">Budget (Rs) </label>
+                                    <input type="text" class="form-control" id="budget">
+                                </div>
+                                <div class="form-group last mb-4">
+                                    <label for="breaks">Maximum Breaks </label>
+                                    <input type="text" class="form-control" id="breaks">
+                                </div>
+                                <button type="submit" class="btn btn-block btn-primary" id="showFlights">Show My
+                                    Flights</button>
+                                <a href="index.html" class="btn btn-block btn-primary">Back to Home</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group last mb-4" id="reachable-city">
+                    <h3>Cities Reachable from Your Current City:</h2>
+                        <ul id="city-list"></ul>
+                </div>
+                <h4 class="text-center mb-4 mt-4" id="ThirdError"></h4>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js\index4.js"></script>
+</body>
+
+</html>
