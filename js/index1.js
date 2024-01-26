@@ -4,23 +4,18 @@ const task1EP = "/task1";
 const button = document.getElementById("show");
 const choicesElement = document.getElementById("choices");
 
-// Task 5
-// const task5EP = "/task5";
-// const showButton = document.getElementById("showResults");
-// const kids = document.getElementById("filter");
-
-//Task 4
-// const task3EP = "/task3";
-// const showFlights = document.getElementById("showFlights");
-
 document.addEventListener("DOMContentLoaded", function () {
   // TASK 1
   button.addEventListener("click", async function (event) {
     console.log("Event lisssdf");
     event.preventDefault(); // Prevent the form from submitting traditionally
 
-    const sourceCity = document.getElementById("source").value;
-    const arrivalCity = document.getElementById("arrival").value;
+    const sourceCityInput = document.getElementById("source");
+    const arrivalCityInput = document.getElementById("arrival");
+
+    // Get the lowercase initial letter of the user-entered city
+    const sourceCity = sourceCityInput.value.trim().toLowerCase().charAt(0);
+    const arrivalCity = arrivalCityInput.value.trim().toLowerCase().charAt(0);
 
     // Create a request payload
     const requestData = {
@@ -29,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
     // Get the values from the input fields
 
+    
     try {
       const response = await fetch(`${baseUrl}${task1EP}`, {
         //const response = await fetch('http://127.0.0.1:5000/task1', {

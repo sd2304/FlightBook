@@ -5,8 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
     showFlights.addEventListener("click", async function (event) {
         console.log("Event listen for task 4");
         event.preventDefault(); // Prevent the form from submitting traditionally
-    
-        const sourceCity = document.getElementById("fromCity").value;
+
+        const sourceCityInput = document.getElementById("fromCity");
+        const sourceCity = sourceCityInput.value.trim().toLowerCase().charAt(0);
         const time = parseInt(document.getElementById("dur").value, 10);
         const budget = parseInt(document.getElementById("budget").value, 10);
         const breaks = parseInt(document.getElementById("breaks").value, 10);

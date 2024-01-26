@@ -6,8 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
     showButton.addEventListener("click", async function (event) {
       console.log("Event listen for task 5");
       event.preventDefault(); // Prevent the form from submitting traditionally
-  
-      const sourceCity = document.getElementById("fromC").value;
+      
+    // Get the lowercase initial letter of the user-entered city
+      const sourceCityInput = document.getElementById("fromC");
+      const sourceCity = sourceCityInput.value.trim().toLowerCase().charAt(0);
       const kidReview = parseInt(document.getElementById("kreview").value, 10);
   
       // Create a request payload
